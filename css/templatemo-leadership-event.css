@@ -698,6 +698,10 @@ strong {
     overflow-y: auto;
 }
 
+.paper {
+    background-color: #f0f8ff;
+}
+
 @media (max-width: 768px) {
     .table-container {
         max-height: 600px;
