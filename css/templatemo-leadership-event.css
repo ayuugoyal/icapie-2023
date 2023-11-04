@@ -479,7 +479,7 @@ strong {
 
 .speakers-wrapper {
     display: flex;
-    animation: scroll 10s linear infinite; /* Adjust duration (10s) as per your requirement */
+    animation: scroll 20s linear infinite;
 }
 
 .speakers-wrapper:hover {
@@ -692,6 +692,17 @@ strong {
     font-size: 18px;
     font-weight: normal;
     color: var(--p-color);
+}
+.table-container {
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        max-height: 600px;
+        overflow-y: auto;
+    }
 }
 
 .nav-tabs .nav-link {
