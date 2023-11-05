@@ -102,6 +102,11 @@ ul li {
     font-size: var(--p-font-size);
     font-weight: var(--font-weight-normal);
 }
+ol li {
+    color: var(--p-color);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight-normal);
+}
 
 a,
 button {
@@ -699,6 +704,10 @@ footer {
 }
 
 .organizers {
+    background-color: #f0f8ff;
+}
+
+.papers {
     background-color: #f0f8ff;
 }
 
