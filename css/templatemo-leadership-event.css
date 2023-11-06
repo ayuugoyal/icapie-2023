@@ -515,17 +515,27 @@ strong {
 }
 
 .hero::after {
-    content: "";
+        content: "";
+        background: rgba(0, 0, 0, 0.45);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    
+    
+    /* content: "";
     background-color: rgba(0, 0, 0, 0.3);
-    /* background: rgba(0, 0, 0, 0)
+    background: rgba(0, 0, 0, 0)
         linear-gradient(rgba(96, 102, 127, 0.1) 0%, rgb(39, 48, 83) 100%) repeat
-        scroll 0% 0%; */
+        scroll 0% 0%;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    margin-bottom: -5px;
+    margin-bottom: -5px; */
 }
 
 .hero-text {
