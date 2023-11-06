@@ -94,17 +94,16 @@
 
                     <div class="col-lg-5 m-auto">
                         <div class="hero-text">
-                            <h1 class="text-white mb-4 fs-3">
+                            <h3 class="text-white mb-4">
                                 8<sup>th</sup> International Conference on
                                 Advanced Production and Industrial Engineering – 2023
                                 <br>
                                 <!-- <u class="text-info">ICAPIE-2023</u>  -->
-                            </h1>
+                            </h3>
 
                             <div class="d-flex justify-content-center align-items-center">
-                                <span class="date-text">December 22 to 25, 2023</span>
-
-                                <span class="location-text">Surajmal Vihar, Shahdara, Delhi</span>
+                                <span class="date-text"><b>December 22 to 25, 2023</b></span>
+                                <span class="location-text"><b>Surajmal Vihar, Shahdara, Delhi</b></span>
                             </div>
 
                             <a href="#section_2" class="custom-link bi-arrow-down arrow-icon"></a>
@@ -728,8 +727,7 @@
                                 tempor incididunt ut dolore</p> -->
                         </div>
                         <div class="col-lg-3 col-12 ms-lg-auto mt-4 mt-lg-0">
-                                <a href="https://" target="_blank" class="custom-btn btn">Register Now</a>
-                        </div>  
+                            <a href="https://" target="_blank" class="custom-btn btn" id="registerButton">Register Now</a>                        </div>  
                     </div>
                 </div>
             </div>
@@ -1497,6 +1495,10 @@
             listItem.textContent = item;
             document.getElementById("publishers-list01").appendChild(listItem);
         });
+
+        document.getElementById("registerButton").addEventListener("click", function() {
+  alert("Form will open Soon...");
+});
 
     </script>
     <script src="js/jquery.min.js"></script>
