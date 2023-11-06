@@ -522,6 +522,19 @@
                             </ul>
                         </div>
                     </div>
+                    <h4>National Advisory Committee:</h4>
+                    <div class="row">
+                        <div class="col-lg-6 col-10 mt-lg-0">
+                            <ul class="" id="mentors">
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 col-10 mt-lg-0">
+                            <ul class="" id="mentors01">
+                            </ul>
+                        </div>
+                    </div>
+                    <h4>International Advisory Committee:</h4>
+                    <div class="fs-4">Coming Soon...</div>
                 </div>
             </div>
             <div class="container mt-5">
@@ -1485,6 +1498,156 @@
             "Green Manufacturing",
         ];
 
+        let mentorsData = [
+            "Dr H S Shan, Ex Prof and Head, IIT Roorkee",
+            "Prof. P K Jain, Director, IIT BHU",
+            "Dr Sunil Pandey, Ex Prof, IIT Delhi",
+            "Prof. Rajeev Tripathi, Director, MNNIT,Allahabad",
+            "Prof. Rakesh Sehgal, NIT- Hamirpur",
+            "Dr Gurjit Singh, DRDO Delhi",
+            "Prof. S K Garg, DTU Delhi",
+            "Dr H. P. S. Yadav, The Institution of Engineers",
+            "Prof. Shankar Chakraborty, Jadavpur (India) University.",
+            "Prof. Pradeep Kumar, IIT-Roorkee",
+            "Prof. Sushil, IIT- Delhi",
+            "Prof. Dinesh Kumar, IIT-Roorkee",
+            "Prof. P M Pandey, Director, BIET, Jhasi",
+            "Prof. S G Deshmukh, IIT Delhi",
+            "Prof Buta Singh, VC, MRSPTU, Bathinda",
+            "Prof. L Vijayraghavan, IIT- Madras",
+            "Prof. P V Rao, IIT- Delhi",
+            "Prof. Ravi Shankar, IIT- Delhi",
+            "Prof. V N Achutha Naikan, IIT –Kharagpur",
+            "Prof. P. Saha, Professor, IIT Kharagpur",
+            "Dr. Nitin Lautre, VNIT Nagpur",
+            "Prof. S. S. Pande, Professor, IIT Bombay",
+            "Dr. P V Kane, VNIT Nagpur",
+            "Prof. P. P. Date, Professor, IIT Bombay",
+            "Prof Rajiv Chaudhary, DTU Delhi",
+            "Prof. V N Achutha Naikan, IIT Kharagpur",
+            "Prof Rajesh Kumar , DTU Delhi",
+            "Prof. Pradeep Kumar Jha, IITR",
+            "Prof R C Singh, DTU Delhi",
+            "Dr. Vivek Jain, TIET, Patiala",
+            "Dr. Saurabh Agarwal, DTU Delhi",
+            "Dr. Subhas NIT- Jamshedpur",
+            "Prof. Hari Singh, NIT Kurukshetra",
+            "Prof Abid Ali Khan, AMU",
+            "Dr. Joy Mishra, NIT Kurukshetra",
+            "Dr. Faisal Hasan, AMU",
+            "Dr. Anup Malik, MNIT-Jaipur",
+            "Prof B K Mishra, MIED, IIT Roorkee",
+            "Dr Dheeraj Gupta, TIET, Patiala",
+            "Dr Rajeev Kumar, IIT Mandi",
+            "Dr. Ravi Kant, GBPIET, Pauri",
+            "Dr. K.K. Dhakar, SGSITS, Indore",
+            "Dr. Jujhar Singh, IKGPTU",
+            "Dr. Prasenjit Chatterjee, MCKV, Kolkata",
+            "Dr Tarun Goyal, IKGPTU",
+            "Dr. S M Pandey, NIT Patna",
+            "Dr Sharanjit Singh, DAV University",
+            "Dr. Balbir Singh, SMVDU",
+            "Dr. Gurpreet Singh Phull, LPU",
+            "Prof. Rakesh Narain, MNNIT, Allahabad",
+            "Prof. Shailendra Kumar, SVNIT Surat",
+            "Prof. Dinesh Khanduja, NIT-KKr",
+            "Prof. Hari Singh, NIT Kurukshetra",
+            "Prof. P C Tiwari, NIT-KKr",
+            "Prof N M Suri, PEC, Chandigarh",
+            "Prof. Nathi Ram Chauhan, IGDTUW, Delhi",
+            "Prof. Puneet Tandon, IIITDM, Jabalpur",
+            "Prof. Pankaj Chandana, NIT Kurukshetra",
+            "Prof. R. K. Garg, DCRUST",
+            "Prof. M F Wani, NIT-Srinagar",
+            "Dr. Pankaj Gupta, MNIT Jaipur",
+            "Prof. Sandeep Singhal, NIT Kurukshetra",
+            "Prof. R S Jadoun, GBPUAT",
+            "Dr Pankaj Kumar, TIET, Patiala",
+            "Prof. Vijay Gautam, DTU Delhi",
+            "Prof. P. K. Singh, SLIET Longowal",
+            "Prof. R. K. Singh, MDI Gurugram",
+            "Prof. B S Pabla, NITTTR, Chandigarh",
+            "Prof. Shailendra Kumar",
+            "Prof. Dinesh Khanduja, NIT-KKr",
+            
+           
+        ];
+
+        let mentorsData01 = [
+        
+            "Prof. Hari Singh, NIT Kurukshetra",
+            "Prof. P C Tiwari, NIT-KKr",
+            "Prof N M Suri, PEC, Chandigarh",
+            "Prof. Nathi Ram Chauhan, IGDTUW, Delhi",
+            "Prof. Puneet Tandon, IIITDM, Jabalpur",
+            "Prof. Pankaj Chandana, NIT Kurukshetra",
+            "Prof. R. K. Garg, DCRUST",
+            "Prof. M F Wani, NIT-Srinagar",
+            "Dr. Pankaj Gupta, MNIT Jaipur",
+            "Prof. Sandeep Singhal, NIT Kurukshetra",
+            "Prof. R S Jadoun, GBPUAT",
+            
+        "Dr Pankaj Kumar, TIET, Patiala",
+            "Prof. Vijay Gautam, DTU Delhi",
+            "Prof. P. K. Singh, SLIET Longowal",
+            "Prof. R. K. Singh, MDI Gurugram",
+            "Prof. B S Pabla, NITTTR, Chandigarh",
+            "Prof. Shailendra Kumar, SVNIT Surat",
+            "Prof. Dinesh Khanduja, NIT-KKr",
+            "Prof. Hari Singh, NIT Kurukshetra",
+            "Prof. P C Tiwari, NIT-KKr",
+            "Prof N M Suri, PEC, Chandigarh",
+            "Prof. Nathi Ram Chauhan, IGDTUW, Delhi",
+            "Prof. Puneet Tandon, IIITDM, Jabalpur",
+            "Prof. Pankaj Chandana, NIT Kurukshetra",
+            "Prof. R. K. Garg, DCRUST",
+            "Prof. M F Wani, NIT-Srinagar",
+            "Dr. Pankaj Gupta, MNIT Jaipur",
+            "Prof. Sandeep Singhal, NIT Kurukshetra",
+            "Prof. R S Jadoun, GBPUAT",
+            "Dr Pankaj Kumar, TIET, Patiala",
+            "Prof. Vijay Gautam, DTU Delhi",
+            "Prof. P. K. Singh, SLIET Longowal",
+            "Prof. R. K. Singh, MDI Gurugram",
+            "Prof. B S Pabla, NITTTR, Chandigarh",
+            "Prof. Shailendra Kumar, SVNIT Surat",
+            "Prof. Dinesh Khanduja, NIT-KKr",
+            "Prof. Hari Singh, NIT Kurukshetra",
+            "Prof. P C Tiwari, NIT-KKr",
+            "Prof N M Suri, PEC, Chandigarh",
+            "Prof. Nathi Ram Chauhan, IGDTUW, Delhi",
+            "Prof. Puneet Tandon, IIITDM, Jabalpur",
+            "Prof. Pankaj Chandana, NIT Kurukshetra",
+            "Prof. R. K. Garg, DCRUST",
+            "Prof. M F Wani, NIT-Srinagar",
+            "Dr. Pankaj Gupta, MNIT Jaipur",
+            "Prof. Sandeep Singhal, NIT Kurukshetra",
+            "Prof. R S Jadoun, GBPUAT",
+            "Dr Pankaj Kumar, TIET, Patiala",
+            "Prof. Vijay Gautam, DTU Delhi",
+            "Prof. P. K. Singh, SLIET Longowal",
+            "Prof. R. K. Singh, MDI Gurugram",
+            "Prof. B S Pabla, NITTTR, Chandigarh",
+            "Prof. Shailendra Kumar, SVNIT Surat",
+            "Prof. Dinesh Khanduja, NIT-KKr",
+            "Prof. Hari Singh, NIT Kurukshetra",
+            "Prof. Akshay Dvivedi, IIT Roorkee",
+            "Dr. Sachin Choudhary, IIT Ropar",
+            "Dr Prabhatchand Yadav, TIET, Patiala",
+            "Dr. Arvind Rajput, IIT Jammu",
+            "Dr. Mohit Law, IIT Kanpur",
+            "Dr Suman Kant, PEC, Chandigarh",
+            "Dr. R. S. Mulik, IIT Roorkee",
+            "Dr. Harish Kumar, NIT Delhi",
+            "Dr. Akhilesh Choudhary, NIT Hamirpur",
+            "Prof. Rajnesh Tyagi, IIT (BHU)",
+            "Dr. Dilshad Khan, NIT Hamirpur",
+            "Dr. S Soundarapandian, IIT Madras",
+            "Dr. H S Pali, NIT Srinagar",
+            "Dr. Amit Kumar, NIT Patna",
+            
+        ]
+
         publishersData.forEach(function (item) {
             var listItem = document.createElement("li");
             listItem.textContent = item;
@@ -1494,6 +1657,18 @@
             var listItem = document.createElement("li");
             listItem.textContent = item;
             document.getElementById("publishers-list01").appendChild(listItem);
+        });
+
+        mentorsData.forEach(function (item) {
+            var listItem = document.createElement("li");
+            listItem.textContent = item;
+            document.getElementById("mentors").appendChild(listItem);
+        });
+
+        mentorsData01.forEach(function (item) {
+            var listItem = document.createElement("li");
+            listItem.textContent = item;
+            document.getElementById("mentors01").appendChild(listItem);
         });
 
         document.getElementById("registerButton").addEventListener("click", function() {
