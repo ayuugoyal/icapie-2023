@@ -746,6 +746,10 @@ footer {
     color: var(--primary-color);
 }
 
+.register{
+    background-color: white;
+}
+
 .schedule-image {
     border-radius: 20px;
 }
