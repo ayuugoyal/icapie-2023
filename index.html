@@ -522,12 +522,28 @@
                     <p>Research paper and article submission are invited (but not limited) to the following topics:</p>
                     <div class="row">
                         <div class="col-lg-6 mt-lg-0">
-                            <ul class="" id="publishers-list01">
+                            <h5>Robotics & Automation</h5>
+                            <ul class="" id="ar-list">
                             </ul>
+                            <h5 class="text-start">Industrial Engineering and Entrepreneurship</h5>
+                            <ul class="" id="engineering-list">
+                            </ul>
+                            <h5>Engineering Materials and applications</h5>
+                            <ul class="" id="materials-list">
+                            </ul>
+                            
                         </div>
                         <div class="col-lg-6 mt-lg-0">
-                            <ul class="" id="publishers-list">
+                            <h5>Morden Manufacturing</h5>
+                            <ul class="" id="manufacturing-list">
                             </ul>
+                            <h5>Industry 4.0 Tools and Technologies</h5>
+                            <ul class="" id="industry-list">
+                            </ul>
+                            
+                            <h5>Design tools and techniques</h5>
+                            <ul id="design-list"></ul>
+                            <h5>Other relevant topics...</h5>
                         </div>
                     </div>
                     <h4 class="text-start">National Advisory Committee:</h4>
@@ -807,28 +823,33 @@
                                 <h6>Chief Patron:</h6>
                         <p>
 
-                            Prof. (Dr.) Mahesh Verma, <br> H'ble Vice Chancellor, GGSIPU
+                            Prof. (Dr.) Mahesh Verma <br> H'ble Vice Chancellor, GGSIPU
                         </p>
                         
                         <h6>Patron:</h6>
                         <p>
 
-                            Prof. (Dr.) P. C. Sharma, <br> Director & Incharge, GGSIPU-EDC
+                            Prof. (Dr.) P. C. Sharma <br> Director & Incharge, GGSIPU-EDC
                         </p>
                         
                         <h6>Co-Patron:</h6>
                         <p>
 
-                            Prof. (Dr.) Arvinder Kaur, <br> Dean USAR & USDI
+                            Prof. (Dr.) Arvinder Kaur <br> Dean USAR & USDI
                         </p>
-                        <h6>Conference Chairs:</h6>
-                <ul>
+                        <h6>Organising Chairman:</h6>
+                
                     <p>
-                        <b class="fs-5">Organising Chairman -</b><br>Prof. (Dr.) Ajay S. Singholi<br>
-                        <b class="fs-5">General Chairs -</b><br>Prof. Ranganath M Singari<br>
+                        Prof. (Dr.) Ajay S. Singholi
+                        
+                    </p>
+                
+                    <h6>General Chairs:</h6>
+                    <p>
+                        Prof. Ranganath M Singari<br>
                         Prof. R. S. Walia
                     </p>
-                </ul>
+                   
                         <h6>Convener:</h6>
                         <p>
 
@@ -1462,48 +1483,35 @@ Maaz
 
     <!-- JAVASCRIPT FILES -->
     <script>
-        let publishersData = ["Hardware and software for smart manufacturing",
-            "Issues in traditional manufacturing processes",
-            "Internet based smart manufacturing",
-            "Industrial Internet of things (IIoT) in smart manufacturing",
-            "Industry 4.0: theoretical and practical approaches",
-            "Industry 4.0 enabling smart manufacturing",
-            "Machine learning tools in smart manufacturing",
-            "Predictive maintenance, safety and risk",
-            "Monitoring and diagnostic tools in smart manufacturing",
-            "Micro and nature inspired manufacturing",
-            "Nature and bio-inspired algorithms tools in smart manufacturing",
-            "Optimization of process in smart manufacturing",
-            "Opportunities and challenges in smart manufacturing",
-            "Quality, production control and safety tools and assurance in smart manufacturing",
-            "Role of automation in smart manufacturing",
-            "Smart manufacturing: a general and state-of-art of review",
-            "Smart and digital supply chain management system",
-            "Smart operators, human-machine interaction",
-            "Sustainable production system",
-            "Virtual and cloud manufacturing",
-            "Virtual reality and augmented reality",
-            "Digital manufacturing",
-            "System engineering",
-            "Industry 4.0",
-            "IoT/IIoT",
-            "Supply chain management",
-            "Modeling and simulation",
-            "Stochastic modelling",
-            "Defense logistics",
-            "Operations management",
-            "Product design and development",
-            "Reliability and maintenance",
-            "Decision science",
-            "TQM and Six Sigma",
-            "Fracture Mechanics",
-            "CAD / CAM / CIM / CAPP",
-            "Renewable Energy",
-            "Robotics & Automation",
-            "Mechatronics",
-            "Renewable Energy",
-            "Manufacturing Systems",
-            "Any other relevant topics"];
+        let arList = [
+        "Robotics & Automation: Technology and applications",
+        "Industrial Automation",
+    "Industrial Automation",
+    "Soft Robotics",
+    "Mechatronics fundamentals and applications",
+    "Role of automation in Smart industries",
+    "Smart operators, human-machine interaction",
+    "Autonomous and self-guided production system and robotics",
+    "Robotics and Automation Engineering in Industries",
+    "Components Design and Simulation for Robotics & Automation",
+        ]
+
+        let manufacturingList = [
+            "Digital Manufacturing / Smart manufacturing",
+        "Advanced manufacturing process",
+    "Additive manufacturing / 3D Printing",
+    "Sustainable Manufacturing",
+    "Conventional and Non-conventional Machining",
+    "Micro-Nano Manufacturing ",
+    "Cellular and flexible manufacturing",
+    "Nature inspired manufacturing",
+    "Green Manufacturing",
+    "Manufacturing Systems",
+    "Surface Engineering",
+    "Industrial Tribology",
+    "Intelligent Manufacturing Systems",
+    "CAD/CAM/CIM/CAPP",
+        ]
 
         let publishersData01 = ["Hardware and software for smart manufacturing",
             "Artificial intelligence and machine learning: practical applications",
@@ -1697,15 +1705,112 @@ Maaz
             
         ]
 
-        publishersData.forEach(function (item) {
+        let industryList = [
+        "Industry 4.0: theoretical and practical approaches",
+    "Artificial Intelligence-of- Things (AIOT) for Industry 4.0",
+    "Artificial Intelligence, Machine learning for Industry 4.0",
+    "Internet of things (IOT) for Industry 4.0",
+    "Cyber – physical system for Industry 4.0",
+    "Cloud Computing and Soft Computing for Industry 4.0",
+    "Data Science and Big Data for Industry 4.0",
+    "Virtual reality and augmented reality for Industry 4.0",
+    "Cyber/data security for Industry 4.0",
+        ]
+
+        let engineeringList = [
+
+"Industrial Engineering and Entrepreneurship",
+    "Economics and business model",
+    "Predictive maintenance, safety and risk",
+    "Quality, production control and safety tools and assurance",
+    "Smart and digital supply chain management system",
+    "Sustainable production system",
+    "System Engineering",
+    "Supply Chain Management",
+    "Stochastic Modelling",
+    "Logistics and its applications ",
+    "Operations Management",
+    "Product Design and Development",
+    "Reliability and Maintenance",
+    "Technology Management",
+    "Environment Management System",
+    "TQM and Six Sigma",
+    "Materials Management and Waste Management",
+    "JIT, Lean and Agile Manufacturing",
+    "Optimisation, e-Manufacturing, FMS",
+    "Ergonomics and Work System Design",
+    "Entrepreneurship Theory",
+    "Entrepreneurship Policy",
+    "Entrepreneurship Education and Capacity Building",
+    "Functional Areas of Entrepreneurship",
+    "Manifestations of Entrepreneurship",
+    "Start-up Entrepreneurship",
+    "Women Entrepreneurship",
+    "Entrepreneurial finance and venture capital",
+        ]
+
+        let materialsList = [
+        "Composite Materials",
+    "Coating and Spray",
+    "Material Fabrication",
+    "Micro Structure Analysis",
+    "Ceramic synthesis ",
+    "Glass Processing",
+    "Metamaterials",
+    "Smart Materials ",
+    "Advanced Materials ",
+        ]
+
+        let designList = [
+        "Designing for sustainability",
+    "Empirical studies concerned with the interaction of users and technology",
+    "Product design",
+    "Interaction design",
+    "Designing the future ",
+    "UI UX : growth, inclusivity, and impact",
+    "Design Thinking and Management",
+    "Design Semantics, Analytical Models and Theories",
+    "Design, Architecture and Interactive Environments",
+    "AR/VR developments and the Metaverse",
+    "Art, Design and Skills for Creativity and Innovation",                                                                                                                             
+    "Advanced Materials and Fashion Design",                                                                                                                                         
+    "Cognitive Design and Ergonomics studies",                                                                                                                                
+    "Animation, Film and Game Design",
+        ]
+
+        arList.forEach(function (item) {
             var listItem = document.createElement("li");
             listItem.textContent = item;
-            document.getElementById("publishers-list").appendChild(listItem);
+            document.getElementById("ar-list").appendChild(listItem);
         });
-        publishersData01.forEach(function (item) {
+        manufacturingList.forEach(function (item) {
             var listItem = document.createElement("li");
             listItem.textContent = item;
-            document.getElementById("publishers-list01").appendChild(listItem);
+            document.getElementById("manufacturing-list").appendChild(listItem);
+        });
+
+        industryList.forEach(function (item) {
+            var listItem = document.createElement("li");
+            listItem.textContent = item;
+            document.getElementById("industry-list").appendChild(listItem);
+        });
+
+        engineeringList.forEach(function (item) {
+            var listItem = document.createElement("li");
+            listItem.textContent = item;
+            document.getElementById("engineering-list").appendChild(listItem);
+        });
+
+        materialsList.forEach(function (item) {
+            var listItem = document.createElement("li");
+            listItem.textContent = item;
+            document.getElementById("materials-list").appendChild(listItem);
+        });
+
+        designList.forEach(function (item) {
+            var listItem = document.createElement("li");
+            listItem.textContent = item;
+            document.getElementById("design-list").appendChild(listItem);
         });
 
         mentorsData.forEach(function (item) {
