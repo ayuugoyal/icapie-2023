@@ -636,20 +636,18 @@
                             <h5>Other relevant topics...</h5>
                         </div>
                     </div>
-                    <h4 class="text-start">National Advisory Committee:</h4>
-                    <div class="fs-4 mb-3">Coming Soon...</div>
-                    <!-- <div class="row">
+                    <div class="row">
                         <div class="col-lg-6 mt-lg-0">
-                            <ul class="" id="mentors">
+                            <h4 class="text-start">National Advisory Committee:</h4>
+                            <ul class="" id="nationalAdvisoryCommitee">
                             </ul>
                         </div>
                         <div class="col-lg-6 mt-lg-0">
-                            <ul class="" id="mentors01">
+                            <h4 class="text-start">International Advisory Committee:</h4>
+                            <ul class="" id="internationalComm">
                             </ul>
                         </div>
-                    </div> -->
-                    <h4 class="text-start">International Advisory Committee:</h4>
-                    <div class="fs-4">Coming Soon...</div>
+                    </div>
                 </div>
             </div>
             <div class="container mt-5">
@@ -1872,11 +1870,81 @@
             "Animation, Film and Game Design",
         ]
 
+        let nationalAdvisoryCommitee = [
+            "Prof.Pradeep Kumar, IIT - Roorkee",
+            "Prof.Rakesh Sehgal, NIT - Hamirpur",
+            "Prof.R K Pandey, Director, IIT Delhi",
+            "Prof.Akshay Dvivedi, IIT Roorkee",
+            "Prof.P M Pandey, Director, IIT Delhi",
+            "Prof R S Walia, PEC, Chandigarh",
+            "Prof N M Suri, PEC, Chandigarh",
+            "Prof.S K Garg, DTU Delhi",
+            "Prof R C Singh, DTU Delhi",
+            "Prof Rajiv Chaudhary, DTU Delhi",
+            "Prof Rajesh Kumar, DTU Delhi",
+            "Prof Anish Kumar Sachdeva, NIT Jalandhar",
+            "Prof.Hari Singh, NIT Kurukshetra",
+            "Dr Gurjit Singh, DRDO Delhi",
+            "Dr.Qasim Murtaza, DTU, Delhi",
+            "Dr.Saurabh Agarwal, DTU Delhi",
+            "Prof.R.K.Garg, DCRUST",
+            "Prof.Vijay Gautam, DTU Delhi",
+            "Prof.M F Wani, NIT - Srinagar",
+            "Dr.Sachin Choudhary, IIT Ropar",
+            "Dr.Arvind Rajput, IIT Jammu",
+            "Dr.Harish Kumar, NIT Delhi",
+            "Prof.P C Tiwari, NIT - KKr",
+            "Dr.Pushperndra Singh, DTU, Delhi",
+            "Dr.S M Pandey, NIT Patna",
+            "Dr.Jujhar Singh, IKGPTU",
+            "Dr Tarun Goyal, IKGPTU",
+            "Dr Suman Kant, PEC, Chandigarh",
+            "Dr Deepti, IGDTUW, Delhi",
+            "Dr.Ravi Pratap Singh, NIT Kurukshetra",
+            "Dr.Amit Kumar, NIT Patna",
+            "Dr.Mukund Datt Sharma, NIT Srinagar",
+            "Prof Narendra Kumar, NIT Jalandhar",
+            "Dr.H S Pali, NIT Srinagar",
+            "Dr.Yashwant Koli MNIT Jaipur"
+        ]
+
+        let internationalCommetiee = [
+            "Prof.Robert C.Creese, West Virginia University, USA.",
+            "Prof. S. K. Mangla, University of Plymouth, United Kingdom.",
+            "Prof. Julfikar Haider, Manchester Metropolitan University, UK.",
+            "Prof. O P Yadav, North Dakota State University, USA.",
+            "Prof. Kapil Gupta, University of Johannesburg, South Africa.",
+            "Prof. Subash C. Sarin, Virginia Tech Univ. USA.",
+            "Dr. Anshuman Jakhmola, Aix Marseille University, Marseille, France.",
+            "Dr. Ratandeep Paul Choudhury, Head, L’Oreal Research and Development, France.",
+            "Prof. Irik Mukhametzyanov, Ufa State Petroleum Technological University, Ufa, Russia.",
+            "Prof. J Paulo Davim, University of Aveiro, Portugal.",
+            "Prof. Ramesh Singh, University of Malaya, Malaysia.",
+            "Dr. M N Qureshi, King Khalid University, Saudi Arabia.",
+            "Dr. Dragan Pamučar, University of Defence, Belgrade, Serbia.",
+            "Dr. Kumar Krishen, NASA, USA.",
+            "Dr. Shadab Ahmad, Department of Mechanical Engineering, Shandong University of Technology, Zibo, Shandong, China",
+            "Dr. Ing. Wolfgang Borutzky, University of Applied Sciences, Sankt Augustin, Germany.",
+        ]
+
         arList.forEach(function (item) {
             var listItem = document.createElement("li");
             listItem.textContent = item;
             document.getElementById("ar-list").appendChild(listItem);
         });
+
+        nationalAdvisoryCommitee.forEach(function (item) {
+            var listItem = document.createElement("li");
+            listItem.textContent = item;
+            document.getElementById("nationalAdvisoryCommitee").appendChild(listItem);
+        });
+
+        internationalCommetiee.forEach(function (item) {
+            var listItem = document.createElement("li");
+            listItem.textContent = item;
+            document.getElementById("internationalComm").appendChild(listItem);
+        });
+
         manufacturingList.forEach(function (item) {
             var listItem = document.createElement("li");
             listItem.textContent = item;
