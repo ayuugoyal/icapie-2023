@@ -613,7 +613,7 @@ strong {
     padding: 10px 15px;
 }
 
-.speakers-info::before {
+/* .speakers-info::before {
     content: "";
     position: absolute;
     top: 0;
@@ -623,7 +623,7 @@ strong {
     width: 5px;
     height: 100%;
     transition: all 1s;
-}
+} */
 
 .speakers-image {
     width: 100%;
