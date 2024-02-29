@@ -476,7 +476,6 @@ strong {
 .highlight-icon:hover {
     color: var(--white-color);
 }
-
 .speakers-container {
     width: 100%;
     overflow: hidden;
@@ -484,20 +483,99 @@ strong {
 
 .speakers-wrapper {
     display: flex;
-    animation: scroll 20s linear infinite;
 }
 
-.speakers-wrapper:hover {
-    animation-play-state: paused; /* Pause scrolling on mouse over */
+.speakers-container:hover .speakers-wrapper {
+    animation: scroll 6s linear infinite;
 }
 
-@keyframes scroll {
+.scrolling-div {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll-left 5s linear infinite;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.scrolling-div:hover {
+    animation-play-state: paused;
+}
+
+.rounded-scrolling-div {
+    display: flex;
+    flex-wrap: wrap;
+    /* Prevent content from wrapping */
+    overflow: hidden;
+    /* Hide overflowing content */
+    background-color: white;
+    /* White background */
+    border-radius: 20px;
+    /* Rounded corners */
+    padding: 10px;
+    width: 50%;
+    justify-content: center;
+        font-size: 23px;
+        font-weight: bold;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+
+@keyframes scroll-left {
     0% {
-        transform: translateX(100%); /* Start scrolling from the right */
+        transform: translateX(100%);
+        /* Start from the right */
     }
+
     100% {
-        transform: translateX(-100%); /* Scroll to the left */
+        transform: translateX(-20%);
+        /* Scroll to the left */
     }
+}
+
+@keyframes scroll-left-desktop {
+    0% {
+        transform: translateX(100%);
+        /* Start from the right */
+    }
+
+    100% {
+        transform: translateX(-10%);
+        /* Scroll to the left */
+    }
+}
+
+/* Keyframes for mobile screens */
+@keyframes scroll-left-mobile {
+    0% {
+        transform: translateX(250%);
+        /* Start from the right, off-screen */
+    }
+
+    100% {
+        transform: translateX(-10%);
+        /* Scroll to the left, off-screen */
+    }
+}
+
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .rounded-scrolling-div {
+        width: 40%;
+        font-size: 13px;
+        font-weight: bold;
+        flex-wrap: wrap;
+            padding: 6px;
+                    margin-bottom: 5px;
+    }
+}
+
+/* Default keyframes for desktop screens */
+.rounded-scrolling-div {
+    animation: scroll-left-desktop 10s linear infinite;
+    /* Apply desktop keyframes */
 }
 
 /* Rest of your styles for speaker elements (e.g., .col-lg-3, .speakers-thumb, etc.) */
@@ -602,7 +680,7 @@ strong {
     color: var(--white-color);
 }
 
-.speakers-info {
+/* .speakers-info {
     background: var(--white-color);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     position: absolute;
@@ -611,7 +689,7 @@ strong {
     left: 0;
     margin: 20px;
     padding: 10px 15px;
-}
+} */
 
 /* .speakers-info::before {
     content: "";
